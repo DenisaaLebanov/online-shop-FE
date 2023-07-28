@@ -1,4 +1,4 @@
-import { ProductDetails } from '../types/product.types';
+import { ProductDetails } from '../modules/shared/types/product.types';
 
 export function getProductDetailsMock(
   name: string = 'product1'
