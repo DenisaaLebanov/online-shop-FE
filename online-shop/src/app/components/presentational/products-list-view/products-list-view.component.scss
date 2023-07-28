@@ -1,0 +1,62 @@
+.table {
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-radius: 0.5rem;
+    border-collapse: separte;
+    border-spacing: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: table;
+    overflow: auto;
+    width: 100%;
+  }
+  .table thead th {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.5rem 0.1rem;
+    vertical-align: bottom;
+  }
+  .table tbody td {
+    border-top: 0.1rem solid gray;
+    border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-style: solid;
+    width: 1rem;
+    line-height: 0.5rem;
+    text-align: center;
+    padding: 0.3rem 0.10rem;
+    vertical-align: center
+;
+  }
+
+  div{
+    padding: 2rem;
+  }
+
+  .buttonType1{
+    background-color: #4CAF50; 
+    color: white;
+    border-color: #4CAF50;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .buttonType2{
+    background-color: white; 
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border-color: white;
+    cursor: pointer;
+  }
