@@ -11,6 +11,9 @@ import { MatTableModule } from '@angular/material/table';
 import { ShoppingCartComponent } from './components/containers/shopping-cart/shopping-cart.component';
 import { ShoppingCartViewComponent } from './components/presentational/shopping-cart-view/shopping-cart-view.component';
 import { ShoppingCartModule } from './modules/shopping-cart/shopping-cart.module';
+import { IconButtonComponent } from './modules/shared/components/presentational/icon-button/icon-button.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,8 @@ import { ShoppingCartModule } from './modules/shopping-cart/shopping-cart.module
     AppRoutingModule,
     MatTableModule,
     ShoppingCartModule,
+    IconButtonComponent,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

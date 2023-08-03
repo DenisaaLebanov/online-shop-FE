@@ -1,6 +1,13 @@
-export interface ProductDetails {
+export type ProductDetails = {
+  id: string;
   name: string;
-  category: string;
-  price: number;
   description: string;
-}
+  price: number;
+  weight: number;
+  imageUrl: string;
+  productCategoryDto: {
+    categoryId: string;
+    categoryName: string;
+    productDescription: string;
+  };
+};

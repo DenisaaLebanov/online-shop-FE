@@ -1,23 +1,30 @@
 <div>
     <h1>Products</h1>
-    <button type="button" class="buttonType1">View cart</button>
-    <button type="button" class="buttonType1">Add</button>
-    <table class = "table">
+    <a [routerLink] = "['/shopping-cart']">
+    <button  class="view-shopping-cart-button" (click) = "getShoppingCartItems()">View cart</button>
+    </a>
+    <table class = "view-products-table">
       <thead>
         <tr>
-          <th>Category</th>
+          <th>Id</th>
           <th>Product Name</th>
           <th>Price</th>
+          <th>Description</th>
+          <th>Category</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of products">
-          <td>{{ item.category }}</td>
+        <tr *ngFor="let item of products | async">
+          <td>{{ item.id }}</td>
           <td>{{ item.name }}</td>
           <td>{{ item.price }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.productCategoryDto.categoryName}}</td>
           <td>
-            <button type="button" class="buttonType2" [routerLink] = "['/products', item.name]">></button>
+            <a [routerLink] = "['/products', item.id]">
+              <app-icon-button type="button" iconType = 'add' class="view-product-detail-button" ></app-icon-button>
+            </a>
           </td>
         </tr>
       </tbody>

@@ -1,0 +1,10 @@
+<h2 *ngIf="productDetail">Product: {{productDetail.name}}</h2>
+<div *ngIf="productDetail">
+    <p>Name:   {{productDetail.name}}</p>
+    <p>Category:   {{productDetail.productCategoryDto.categoryName}}</p>
+    <p>Price:    {{productDetail.price}}</p>
+    <p>Description:   {{productDetail.description}}</p>
+    <button type="button" class="addButton" *ngIf="productDetail" (click) = "addToCartProductDetail(productDetail)">Add</button>
+    <app-icon-button type="button" class="deleteButton" iconType = 'delete' *ngIf="productDetail" (click) = "deleteProductFromList(productDetail)"></app-icon-button>
+
+</div>
